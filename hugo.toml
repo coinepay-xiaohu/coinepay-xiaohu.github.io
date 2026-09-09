@@ -27,8 +27,8 @@ buildExpired = false
 [params]
   env = 'production'
   title = 'coinepay-xiaohu'
-  description = '个人技术博客'
-  keywords = ['blog', 'hugo']
+  description = 'USDT-TRC20 转账省手续费：能量租赁最低 1.5 TRX 起，免注册下单，支持 API 批量接入'
+  keywords = ['TRX能量租赁', 'USDT转账', 'TRC20手续费', '能量委托', 'Coinepay']
   DateFormat = '2006-01-02'
   defaultTheme = 'auto'      # auto / light / dark
   disableThemeToggle = false
@@ -47,8 +47,33 @@ buildExpired = false
   comments = false
 
   [params.homeInfoParams]
-    Title = '你好 👋'
-    Content = '欢迎来到我的博客。'
+    Title = 'Coinepay · TRON 能量租赁与 USDT 支付'
+    Content = '''
+转一笔 USDT-TRC20，能量不够就要烧掉 **13~27 TRX**。这个消耗和转账金额无关，只看你转了几笔——转得越频繁，白烧的越多。
+
+租能量能把这块成本压下来：
+
+| 场景 | 需要能量 | 大致成本 |
+|---|---|---|
+| 对方地址已有 USDT | 65,000 | 约 1.5~1.7 TRX |
+| 对方地址是空的 | 130,000 | 约 3.0~3.4 TRX |
+
+**免注册也能下单**——把 TRX 转到平台收款地址，能量会自动委托回你的付款地址，不用建账号、不用绑定。
+
+批量转账、交易所、商户可以直接接 API 自动租用，按笔触发，不用人工盯着。
+
+除了能量租赁，虚拟信用卡开通和全球跨境汇款也在做。
+
+有问题直接找我，**Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[params.socialIcons]]
+    name = 'telegram'
+    url = 'https://t.me/coinepay_xiaohu'
+
+  [[params.socialIcons]]
+    name = 'whatsapp'
+    url = 'https://wa.me/message/2I3GXEELDVMHP1'
 
   [[params.socialIcons]]
     name = 'github'
