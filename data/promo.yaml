@@ -18,37 +18,41 @@ badge: "推广"
 
 # ── 板块一：开卡 ──────────────────────────────
 card:
-  title: "Coinepay 虚拟信用卡 · 一张卡付全球"
-  body: "订阅 ChatGPT、Claude 等 AI 服务，投放 Facebook、Google、TikTok 广告，开通 YouTube、Netflix 等会员，以及全球跨境汇款 —— 一张卡全部搞定。支持多币种结算，实时充值，即开即用。"
+  title: "拿 USDT 直接消费：Coinepay 虚拟卡"
+  body: "链上的 USDT 想花到链下——订阅 AI 服务、开会员、投广告、海外购物——中间缺的就是一张能用的卡。充值即到账，多币种结算，不用先出金到银行再绕一圈。"
   cta:
-    label: "立即开卡 →"
+    label: "开卡试试 →"
     url: "https://www.coinepay.net/login?referrer=Getrich888"
 
 # ── 板块二：联系方式 ──────────────────────────
 contact:
-  title: "加入我们"
-  body: "有问题随时找我们，开卡、充值、汇款都有人工跟进。"
+  title: "找我聊"
+  body: "租能量、开卡、汇款，有问题直接发消息，不用等工单。"
   links:
     - icon: "✈"
-      label: "Telegram 群"
-      url: "https://t.me/coinepay3"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
     - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
       label: "在线客服"
       url: "https://chat.ssrchat.com/service/grpect"
     - icon: "💳"
       label: "进入开卡平台"
       url: "https://www.coinepay.net/login?referrer=Getrich888"
-      primary: true                            # 高亮成主按钮
+      primary: true
 
 # ── 板块三：租能量 ────────────────────────────
 energy:
   icon: "⚡"
-  title: "TRC20 转账手续费太贵？租能量"
+  title: "TRC20 转账手续费太贵？租能量最直接"
   points:
-    - "转一笔 USDT-TRC20，能量不够就要烧掉 <b>13~27 TRX</b>，跟转多少钱无关，只看转几笔。"
-    - "租能量最低 <b>1.5~1.7 TRX</b> 就能拿到 65,000 能量（够转一笔给已有 USDT 的地址）；对方地址是空的、没有 USDT，则需要 130,000 能量，约 <b>3.0~3.4 TRX</b>。"
-    - "免注册也能下单：把 TRX 转到平台收款地址，能量自动委托回你的付款地址。"
+    - "转一笔 USDT-TRC20，能量不够就烧 <b>13~27 TRX</b>。<b>这个消耗跟你转多少钱无关</b>，只看转了几笔。"
+    - "对方地址已有 USDT：需要 65,000 能量，租金约 <b>1.5~1.7 TRX</b>，对比直接烧 TRX 省下一大半。"
+    - "对方地址是空的、从没收过 USDT：需要 130,000 能量，约 <b>3.0~3.4 TRX</b>。"
+    - "<b>免注册下单</b>——TRX 转到平台收款地址，能量自动委托回你的付款地址，几秒到。"
     - "批量转账、交易所、商户可直接接 API 自动租能量。"
   cta:
-    label: "去租能量"
+    label: "立即租能量 →"
     url: "https://login.trxapi.io/energy"
