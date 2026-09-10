@@ -1,0 +1,48 @@
+# 한국어 —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "광고"
+
+card:
+  title: "USDT를 그대로 쓰기: Coinepay 가상카드"
+  body: "체인 위의 USDT를 체인 밖에서 쓰려면 —— AI 서비스 구독, 멤버십 가입, 광고 집행, 해외 쇼핑 —— 결국 제대로 작동하는 카드 한 장이 필요합니다. 충전은 즉시 반영되고, 다중 통화로 정산되며, 은행으로 출금해 돌아갈 필요가 없습니다."
+  cta:
+    label: "카드 발급하기 →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "편하게 문의하세요"
+  body: "에너지 렌탈, 카드 발급, 송금 관련 문의는 티켓 대기 없이 바로 메시지 주세요."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "실시간 상담"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "카드 발급 플랫폼으로"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "TRC20 수수료가 부담되나요? 에너지 대여가 가장 직접적인 방법입니다"
+  points:
+    - "에너지가 부족하면 USDT-TRC20 전송 한 건마다 <b>13~27 TRX</b>가 소모됩니다. <b>이 비용은 보내는 금액과 무관하며</b> 전송 횟수로만 결정됩니다."
+    - "받는 주소에 USDT가 이미 있는 경우: 65,000 에너지가 필요하며 대여료는 약 <b>1.5~1.7 TRX</b>로, TRX를 직접 소각하는 것의 절반도 되지 않습니다."
+    - "받는 주소가 비어 있고 USDT를 받은 적이 없는 경우: 130,000 에너지가 필요하며 약 <b>3.0~3.4 TRX</b>입니다."
+    - "<b>가입 없이 주문</b> —— TRX를 플랫폼 수취 주소로 보내면 몇 초 안에 에너지가 보내는 주소로 위임됩니다."
+    - "대량 전송, 거래소, 가맹점은 API로 자동 대여할 수 있습니다."
+  cta:
+    label: "지금 에너지 대여하기 →"
+    url: "https://login.trxapi.io/energy"

@@ -1,0 +1,48 @@
+# Tiếng Việt —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Tài trợ"
+
+card:
+  title: "Tiêu USDT trực tiếp: thẻ ảo Coinepay"
+  body: "Đưa USDT từ on-chain ra đời thực —— đăng ký dịch vụ AI, mua gói thành viên, chạy quảng cáo, mua sắm ở nước ngoài —— chỉ thiếu đúng một thứ: một chiếc thẻ dùng được thật. Nạp tiền vào tức thì, thanh toán đa tiền tệ, không phải rút về ngân hàng rồi đi đường vòng."
+  cta:
+    label: "Mở thẻ ngay →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Nhắn cho tôi"
+  body: "Thuê năng lượng, mở thẻ, chuyển tiền —— nhắn trực tiếp, khỏi chờ phiếu hỗ trợ."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Hỗ trợ trực tuyến"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Vào nền tảng mở thẻ"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Phí TRC20 quá cao? Thuê năng lượng là cách trực tiếp nhất"
+  points:
+    - "Mỗi giao dịch USDT-TRC20 đốt <b>13–27 TRX</b> khi hết năng lượng. <b>Chi phí này không liên quan tới số tiền bạn chuyển</b>, chỉ phụ thuộc số lần chuyển."
+    - "Địa chỉ nhận đã có USDT: cần 65.000 năng lượng, thuê khoảng <b>1,5–1,7 TRX</b>, chưa tới một nửa so với đốt TRX trực tiếp."
+    - "Địa chỉ nhận đang trống và chưa từng nhận USDT: cần 130.000 năng lượng, khoảng <b>3,0–3,4 TRX</b>."
+    - "<b>Đặt lệnh không cần đăng ký</b> —— chuyển TRX tới địa chỉ nhận của nền tảng, chỉ vài giây sau năng lượng về địa chỉ gửi của bạn."
+    - "Chuyển khoản hàng loạt, sàn giao dịch và thương nhân có thể thuê tự động qua API."
+  cta:
+    label: "Thuê năng lượng ngay →"
+    url: "https://login.trxapi.io/energy"

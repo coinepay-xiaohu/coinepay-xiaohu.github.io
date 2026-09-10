@@ -1,0 +1,48 @@
+# Türkçe —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorlu"
+
+card:
+  title: "USDT’yi doğrudan harcayın: Coinepay sanal kartı"
+  body: "Zincirdeki USDT’yi gerçek dünyada harcamak —— yapay zekâ abonelikleri, üyelikler, reklam hesapları, yurt dışı alışveriş —— tek bir eksik parçaya bakar: gerçekten çalışan bir kart. Yüklemeler anında geçer, mutabakat çoklu para birimiyle yapılır ve önce bankaya çekmeye gerek kalmaz."
+  cta:
+    label: "Kart alın →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Bana yazın"
+  body: "Enerji kiralama, kart, havale —— doğrudan mesaj atın, talep kuyruğu beklemeyin."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Canlı destek"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Platforma git"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "TRC20 ücretleri çok mu yüksek? En doğrudan çözüm enerji kiralamak"
+  points:
+    - "Enerji bittiğinde her USDT-TRC20 transferi <b>13–27 TRX</b> yakar. <b>Bu maliyet gönderdiğiniz tutardan bağımsızdır</b>, yalnızca transfer sayısına bağlıdır."
+    - "Alıcıda zaten USDT var: 65.000 enerji, kirası yaklaşık <b>1,5–1,7 TRX</b>; TRX yakmanın maliyetinin yarısından çok daha az."
+    - "Alıcı adresi boş ve hiç USDT almamış: 130.000 enerji, yaklaşık <b>3,0–3,4 TRX</b>."
+    - "<b>Kayıtsız sipariş</b> —— TRX’i platform adresine gönderin, enerji saniyeler içinde gönderen adresinize devredilsin."
+    - "Toplu transferler, borsalar ve işletmeler API üzerinden otomatik kiralayabilir."
+  cta:
+    label: "Hemen enerji kirala →"
+    url: "https://login.trxapi.io/energy"

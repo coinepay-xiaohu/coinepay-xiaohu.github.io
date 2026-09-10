@@ -1,0 +1,48 @@
+# Français —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorisé"
+
+card:
+  title: "Dépensez vos USDT directement : la carte virtuelle Coinepay"
+  body: "Faire passer des USDT de la blockchain au monde réel — abonnements IA, adhésions, campagnes publicitaires, achats à l’étranger — ne tient qu’à une chose : une carte qui fonctionne. Les recharges arrivent instantanément, le règlement est multidevise, et aucun détour par un retrait bancaire n’est nécessaire."
+  cta:
+    label: "Obtenir une carte →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Parlons-en"
+  body: "Location d’énergie, cartes, transferts : écrivez-moi directement, sans file d’attente."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Assistance en direct"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Accéder à la plateforme"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Frais TRC20 trop élevés ? Louer de l’énergie est la solution la plus directe"
+  points:
+    - "Chaque transfert USDT-TRC20 consomme <b>13 à 27 TRX</b> quand l’énergie manque. <b>Ce coût est indépendant du montant envoyé</b> : seul le nombre de transferts compte."
+    - "Le destinataire détient déjà des USDT : 65 000 d’énergie, louée environ <b>1,5–1,7 TRX</b>, bien moins de la moitié du coût en TRX brûlés."
+    - "L’adresse du destinataire est vide et n’a jamais reçu d’USDT : 130 000 d’énergie, soit environ <b>3,0–3,4 TRX</b>."
+    - "<b>Commande sans inscription</b> —— envoyez des TRX à l’adresse de la plateforme et l’énergie est déléguée à votre adresse d’envoi en quelques secondes."
+    - "Transferts groupés, plateformes d’échange et marchands peuvent louer automatiquement via l’API."
+  cta:
+    label: "Louer de l’énergie →"
+    url: "https://login.trxapi.io/energy"

@@ -1,0 +1,48 @@
+# Português —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Patrocinado"
+
+card:
+  title: "Gaste USDT diretamente: o cartão virtual Coinepay"
+  body: "Levar o USDT da rede para o mundo real — assinaturas de IA, planos, campanhas de anúncios, compras no exterior — depende de uma única peça: um cartão que realmente funcione. As recargas caem na hora, a liquidação é multimoeda e não é preciso passar antes por um saque bancário."
+  cta:
+    label: "Pedir um cartão →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Fale comigo"
+  body: "Aluguel de energia, cartões, remessas: me chame direto, sem fila de chamados."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Suporte ao vivo"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Acessar a plataforma"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Taxas TRC20 muito altas? Alugar energia resolve direto"
+  points:
+    - "Cada transferência de USDT-TRC20 queima <b>13–27 TRX</b> quando a energia acaba. <b>O custo não depende do valor enviado</b>, apenas da quantidade de transferências."
+    - "O destinatário já possui USDT: 65.000 de energia, com aluguel de cerca de <b>1,5–1,7 TRX</b>, bem menos da metade do custo de queimar TRX."
+    - "O endereço de destino está vazio e nunca recebeu USDT: 130.000 de energia, aproximadamente <b>3,0–3,4 TRX</b>."
+    - "<b>Peça sem cadastro</b> —— envie TRX ao endereço da plataforma e a energia é delegada ao seu endereço de envio em segundos."
+    - "Transferências em lote, exchanges e comerciantes podem alugar automaticamente pela API."
+  cta:
+    label: "Alugar energia →"
+    url: "https://login.trxapi.io/energy"

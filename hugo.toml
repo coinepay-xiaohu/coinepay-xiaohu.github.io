@@ -1,8 +1,13 @@
 baseURL = 'https://coinepay-xiaohu.github.io/'
-languageCode = 'zh-cn'
-defaultContentLanguage = 'zh'
-title = 'coinepay-xiaohu'
 theme = 'PaperMod'
+
+# ── 多语言 ────────────────────────────────────
+# 中文在站点根目录（/posts/...），其余语言在 /<语言代码>/ 下，原有中文链接不变。
+# params.noindex = true 的语言暂不进 sitemap，页面带 noindex,follow；
+# 该语言有了文章后，删掉它的 noindex 一行即可放出。
+# params.langGroup：切换器下拉面板的分组。
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 enableEmoji = true
@@ -18,17 +23,15 @@ buildExpired = false
   minifyOutput = true
 
 [outputs]
-  home = ['HTML', 'RSS', 'JSON']   # JSON 供站内搜索使用
+  home = ['HTML', 'RSS', 'JSON']
 
 [taxonomies]
   category = 'categories'
   tag = 'tags'
 
+# ── 全站通用参数（会被各语言的 params 覆盖/补充）──
 [params]
   env = 'production'
-  title = 'coinepay-xiaohu'
-  description = 'USDT-TRC20 转账省手续费：能量租赁最低 1.5 TRX 起，免注册下单，支持 API 批量接入'
-  keywords = ['TRX能量租赁', 'USDT转账', 'TRC20手续费', '能量委托', 'Coinepay']
   DateFormat = '2006-01-02'
   defaultTheme = 'auto'      # auto / light / dark
   disableThemeToggle = false
@@ -46,26 +49,6 @@ buildExpired = false
   hideSummary = false
   comments = false
 
-  [params.homeInfoParams]
-    Title = 'Coinepay · TRON 能量租赁与 USDT 支付'
-    Content = '''
-转一笔 USDT-TRC20，能量不够就要烧掉 **13~27 TRX**。这个消耗和转账金额无关，只看你转了几笔——转得越频繁，白烧的越多。
-
-租能量能把这块成本压下来：
-
-| 场景 | 需要能量 | 大致成本 |
-|---|---|---|
-| 对方地址已有 USDT | 65,000 | 约 1.5~1.7 TRX |
-| 对方地址是空的 | 130,000 | 约 3.0~3.4 TRX |
-
-**免注册也能下单**——把 TRX 转到平台收款地址，能量会自动委托回你的付款地址，不用建账号、不用绑定。
-
-批量转账、交易所、商户可以直接接 API 自动租用，按笔触发，不用人工盯着。
-
-除了能量租赁，虚拟信用卡开通和全球跨境汇款也在做。
-
-有问题直接找我，**Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
-'''
 
   [[params.socialIcons]]
     name = 'telegram'
@@ -121,6 +104,983 @@ buildExpired = false
   name = '搜索'
   url = '/search/'
   weight = 50
+
+# ══ 简体中文 (zh) · 东亚 ══════════════════════════════
+[languages.zh]
+  locale = "zh-CN"
+  label = "简体中文"
+  contentDir = 'content/zh'
+  weight = 1
+  title = "coinepay-xiaohu"
+
+  [languages.zh.params]
+    description = "USDT-TRC20 转账省手续费：能量租赁最低 1.5 TRX 起，免注册下单，支持 API 批量接入"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "ea"
+
+    [languages.zh.params.homeInfoParams]
+      Title = "Coinepay · TRON 能量租赁与 USDT 支付"
+      Content = '''
+转一笔 USDT-TRC20，能量不够就要烧掉 **13~27 TRX**。这个消耗和转账金额无关，只看你转了几笔——转得越频繁，白烧的越多。
+
+租能量能把这块成本压下来：
+
+| 场景 | 需要能量 | 大致成本 |
+|---|---|---|
+| 对方地址已有 USDT | 65,000 | 约 1.5~1.7 TRX |
+| 对方地址是空的 | 130,000 | 约 3.0~3.4 TRX |
+
+**免注册也能下单**——把 TRX 转到平台收款地址，能量会自动委托回你的付款地址，不用建账号、不用绑定。
+
+批量转账、交易所、商户可以直接接 API 自动租用，按笔触发，不用人工盯着。
+
+除了能量租赁，虚拟信用卡开通和全球跨境汇款也在做。
+
+有问题直接找我，**Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.zh.menu.main]]
+    identifier = 'posts'
+    name = "文章"
+    url = '/posts/'
+    weight = 10
+  [[languages.zh.menu.main]]
+    identifier = 'archives'
+    name = "归档"
+    url = '/archives/'
+    weight = 20
+  [[languages.zh.menu.main]]
+    identifier = 'categories'
+    name = "分类"
+    url = '/categories/'
+    weight = 30
+  [[languages.zh.menu.main]]
+    identifier = 'tags'
+    name = "标签"
+    url = '/tags/'
+    weight = 40
+  [[languages.zh.menu.main]]
+    identifier = 'search'
+    name = "搜索"
+    url = '/search/'
+    weight = 50
+
+# ══ English (en) · 欧洲与美洲 ════════════════════════
+[languages.en]
+  locale = "en"
+  label = "English"
+  contentDir = 'content/en'
+  weight = 2
+  title = "coinepay-xiaohu"
+
+  [languages.en.params]
+    description = "Coinepay · TRON Energy Rental and USDT Payments"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.en.params.homeInfoParams]
+      Title = "Coinepay · TRON Energy Rental and USDT Payments"
+      Content = '''
+Every USDT-TRC20 transfer burns **13–27 TRX** when you are short on energy. The cost has nothing to do with how much you send — only with how many transfers you make. The more often you send, the more you waste.
+
+Renting energy brings that cost down:
+
+| Scenario | Energy needed | Approx. cost |
+|---|---|---|
+| Recipient already holds USDT | 65,000 | 1.5~1.7 TRX |
+| Recipient address is empty | 130,000 | 3.0~3.4 TRX |
+
+**No registration required** — send TRX to the platform address and the energy is delegated back to your sending address automatically. No account, no binding.
+
+Batch transfers, exchanges and merchants can connect the API to rent automatically, triggered per transfer, with nothing to watch manually.
+
+Alongside energy rental, we also handle virtual card issuance and global remittance.
+
+Message me directly with any questions —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.en.menu.main]]
+    identifier = 'posts'
+    name = "Posts"
+    url = '/posts/'
+    weight = 10
+  [[languages.en.menu.main]]
+    identifier = 'archives'
+    name = "Archives"
+    url = '/archives/'
+    weight = 20
+  [[languages.en.menu.main]]
+    identifier = 'categories'
+    name = "Categories"
+    url = '/categories/'
+    weight = 30
+  [[languages.en.menu.main]]
+    identifier = 'tags'
+    name = "Tags"
+    url = '/tags/'
+    weight = 40
+  [[languages.en.menu.main]]
+    identifier = 'search'
+    name = "Search"
+    url = '/search/'
+    weight = 50
+
+# ══ Español (es) · 欧洲与美洲 ════════════════════════
+[languages.es]
+  locale = "es"
+  label = "Español"
+  contentDir = 'content/es'
+  weight = 3
+  title = "coinepay-xiaohu"
+
+  [languages.es.params]
+    description = "Coinepay · Alquiler de energía TRON y pagos en USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.es.params.homeInfoParams]
+      Title = "Coinepay · Alquiler de energía TRON y pagos en USDT"
+      Content = '''
+Cada transferencia de USDT-TRC20 quema **13–27 TRX** cuando te falta energía. El coste no depende de cuánto envías, sino de cuántas transferencias haces: cuanto más a menudo envías, más desperdicias.
+
+Alquilar energía reduce ese coste:
+
+| Escenario | Energía necesaria | Coste aproximado |
+|---|---|---|
+| El destinatario ya tiene USDT | 65,000 | 1.5~1.7 TRX |
+| La dirección de destino está vacía | 130,000 | 3.0~3.4 TRX |
+
+**Sin registro** —— envía TRX a la dirección de la plataforma y la energía se delega automáticamente a tu dirección de envío. Sin cuenta, sin vinculación.
+
+Las transferencias por lotes, los exchanges y los comercios pueden conectar la API para alquilar de forma automática, activada por cada transferencia y sin supervisión manual.
+
+Además del alquiler de energía, también emitimos tarjetas virtuales y gestionamos remesas internacionales.
+
+Escríbeme directamente si tienes dudas —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.es.menu.main]]
+    identifier = 'posts'
+    name = "Artículos"
+    url = '/posts/'
+    weight = 10
+  [[languages.es.menu.main]]
+    identifier = 'archives'
+    name = "Archivo"
+    url = '/archives/'
+    weight = 20
+  [[languages.es.menu.main]]
+    identifier = 'categories'
+    name = "Categorías"
+    url = '/categories/'
+    weight = 30
+  [[languages.es.menu.main]]
+    identifier = 'tags'
+    name = "Etiquetas"
+    url = '/tags/'
+    weight = 40
+  [[languages.es.menu.main]]
+    identifier = 'search'
+    name = "Buscar"
+    url = '/search/'
+    weight = 50
+
+# ══ Français (fr) · 欧洲与美洲 ═══════════════════════
+[languages.fr]
+  locale = "fr"
+  label = "Français"
+  contentDir = 'content/fr'
+  weight = 4
+  title = "coinepay-xiaohu"
+
+  [languages.fr.params]
+    description = "Coinepay · Location d’énergie TRON et paiements en USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.fr.params.homeInfoParams]
+      Title = "Coinepay · Location d’énergie TRON et paiements en USDT"
+      Content = '''
+Chaque transfert USDT-TRC20 consomme **13 à 27 TRX** lorsque votre énergie est insuffisante. Ce coût ne dépend pas du montant envoyé, mais du nombre de transferts : plus vous envoyez souvent, plus vous gaspillez.
+
+Louer de l’énergie réduit ce coût :
+
+| Situation | Énergie nécessaire | Coût approximatif |
+|---|---|---|
+| Le destinataire détient déjà des USDT | 65,000 | 1.5~1.7 TRX |
+| L’adresse du destinataire est vide | 130,000 | 3.0~3.4 TRX |
+
+**Sans inscription** —— envoyez des TRX à l’adresse de la plateforme et l’énergie est automatiquement déléguée à votre adresse d’envoi. Ni compte, ni liaison.
+
+Les transferts groupés, les plateformes d’échange et les marchands peuvent connecter l’API pour louer automatiquement, à chaque transfert, sans surveillance manuelle.
+
+Outre la location d’énergie, nous proposons aussi l’émission de cartes virtuelles et les transferts internationaux.
+
+Écrivez-moi directement pour toute question —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.fr.menu.main]]
+    identifier = 'posts'
+    name = "Articles"
+    url = '/posts/'
+    weight = 10
+  [[languages.fr.menu.main]]
+    identifier = 'archives'
+    name = "Archives"
+    url = '/archives/'
+    weight = 20
+  [[languages.fr.menu.main]]
+    identifier = 'categories'
+    name = "Catégories"
+    url = '/categories/'
+    weight = 30
+  [[languages.fr.menu.main]]
+    identifier = 'tags'
+    name = "Étiquettes"
+    url = '/tags/'
+    weight = 40
+  [[languages.fr.menu.main]]
+    identifier = 'search'
+    name = "Recherche"
+    url = '/search/'
+    weight = 50
+
+# ══ Português (pt) · 欧洲与美洲 ══════════════════════
+[languages.pt]
+  locale = "pt"
+  label = "Português"
+  contentDir = 'content/pt'
+  weight = 5
+  title = "coinepay-xiaohu"
+
+  [languages.pt.params]
+    description = "Coinepay · Aluguel de energia TRON e pagamentos em USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.pt.params.homeInfoParams]
+      Title = "Coinepay · Aluguel de energia TRON e pagamentos em USDT"
+      Content = '''
+Cada transferência de USDT-TRC20 queima **13–27 TRX** quando falta energia. O custo não tem relação com o valor enviado, apenas com a quantidade de transferências: quanto mais frequentes, mais se desperdiça.
+
+Alugar energia reduz esse custo:
+
+| Cenário | Energia necessária | Custo aproximado |
+|---|---|---|
+| O destinatário já possui USDT | 65,000 | 1.5~1.7 TRX |
+| O endereço de destino está vazio | 130,000 | 3.0~3.4 TRX |
+
+**Sem cadastro** —— envie TRX ao endereço da plataforma e a energia é delegada automaticamente ao seu endereço de envio. Sem conta, sem vínculo.
+
+Transferências em lote, exchanges e comerciantes podem conectar a API para alugar automaticamente, acionada a cada transferência, sem acompanhamento manual.
+
+Além do aluguel de energia, também emitimos cartões virtuais e cuidamos de remessas internacionais.
+
+Me chame direto em caso de dúvida —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.pt.menu.main]]
+    identifier = 'posts'
+    name = "Artigos"
+    url = '/posts/'
+    weight = 10
+  [[languages.pt.menu.main]]
+    identifier = 'archives'
+    name = "Arquivo"
+    url = '/archives/'
+    weight = 20
+  [[languages.pt.menu.main]]
+    identifier = 'categories'
+    name = "Categorias"
+    url = '/categories/'
+    weight = 30
+  [[languages.pt.menu.main]]
+    identifier = 'tags'
+    name = "Tags"
+    url = '/tags/'
+    weight = 40
+  [[languages.pt.menu.main]]
+    identifier = 'search'
+    name = "Buscar"
+    url = '/search/'
+    weight = 50
+
+# ══ Polski (pl) · 欧洲与美洲 ═════════════════════════
+[languages.pl]
+  locale = "pl"
+  label = "Polski"
+  contentDir = 'content/pl'
+  weight = 6
+  title = "coinepay-xiaohu"
+
+  [languages.pl.params]
+    description = "Coinepay · Wynajem energii TRON i płatności USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.pl.params.homeInfoParams]
+      Title = "Coinepay · Wynajem energii TRON i płatności USDT"
+      Content = '''
+Każdy przelew USDT-TRC20 spala **13–27 TRX**, gdy brakuje energii. Koszt nie zależy od wysyłanej kwoty, tylko od liczby przelewów — im częściej wysyłasz, tym więcej marnujesz.
+
+Wynajem energii obniża ten koszt:
+
+| Sytuacja | Wymagana energia | Orientacyjny koszt |
+|---|---|---|
+| Odbiorca ma już USDT | 65,000 | 1.5~1.7 TRX |
+| Adres odbiorcy jest pusty | 130,000 | 3.0~3.4 TRX |
+
+**Bez rejestracji** —— wyślij TRX na adres platformy, a energia zostanie automatycznie delegowana na Twój adres nadawcy. Bez konta, bez wiązania.
+
+Przelewy zbiorcze, giełdy i sprzedawcy mogą podłączyć API i wynajmować automatycznie — wyzwalane przy każdym przelewie, bez ręcznego nadzoru.
+
+Poza wynajmem energii zajmujemy się też wydawaniem kart wirtualnych i przelewami międzynarodowymi.
+
+W razie pytań pisz bezpośrednio do mnie —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.pl.menu.main]]
+    identifier = 'posts'
+    name = "Artykuły"
+    url = '/posts/'
+    weight = 10
+  [[languages.pl.menu.main]]
+    identifier = 'archives'
+    name = "Archiwum"
+    url = '/archives/'
+    weight = 20
+  [[languages.pl.menu.main]]
+    identifier = 'categories'
+    name = "Kategorie"
+    url = '/categories/'
+    weight = 30
+  [[languages.pl.menu.main]]
+    identifier = 'tags'
+    name = "Tagi"
+    url = '/tags/'
+    weight = 40
+  [[languages.pl.menu.main]]
+    identifier = 'search'
+    name = "Szukaj"
+    url = '/search/'
+    weight = 50
+
+# ══ Română (ro) · 欧洲与美洲 ═════════════════════════
+[languages.ro]
+  locale = "ro"
+  label = "Română"
+  contentDir = 'content/ro'
+  weight = 7
+  title = "coinepay-xiaohu"
+
+  [languages.ro.params]
+    description = "Coinepay · Închiriere de energie TRON și plăți în USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "eu"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ro.params.homeInfoParams]
+      Title = "Coinepay · Închiriere de energie TRON și plăți în USDT"
+      Content = '''
+Fiecare transfer USDT-TRC20 consumă **13–27 TRX** când nu ai suficientă energie. Costul nu ține de suma trimisă, ci de numărul de transferuri — cu cât trimiți mai des, cu atât pierzi mai mult.
+
+Închirierea energiei reduce acest cost:
+
+| Situație | Energie necesară | Cost aproximativ |
+|---|---|---|
+| Destinatarul deține deja USDT | 65,000 | 1.5~1.7 TRX |
+| Adresa destinatarului este goală | 130,000 | 3.0~3.4 TRX |
+
+**Fără înregistrare** —— trimite TRX la adresa platformei, iar energia este delegată automat către adresa ta de expediere. Fără cont, fără asociere.
+
+Transferurile în masă, bursele și comercianții pot conecta API-ul pentru închiriere automată, declanșată la fiecare transfer, fără supraveghere manuală.
+
+Pe lângă închirierea de energie, ne ocupăm și de emiterea de carduri virtuale și de transferuri internaționale.
+
+Scrie-mi direct dacă ai întrebări —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ro.menu.main]]
+    identifier = 'posts'
+    name = "Articole"
+    url = '/posts/'
+    weight = 10
+  [[languages.ro.menu.main]]
+    identifier = 'archives'
+    name = "Arhivă"
+    url = '/archives/'
+    weight = 20
+  [[languages.ro.menu.main]]
+    identifier = 'categories'
+    name = "Categorii"
+    url = '/categories/'
+    weight = 30
+  [[languages.ro.menu.main]]
+    identifier = 'tags'
+    name = "Etichete"
+    url = '/tags/'
+    weight = 40
+  [[languages.ro.menu.main]]
+    identifier = 'search'
+    name = "Căutare"
+    url = '/search/'
+    weight = 50
+
+# ══ Türkçe (tr) · 中东 ════════════════════════════
+[languages.tr]
+  locale = "tr"
+  label = "Türkçe"
+  contentDir = 'content/tr'
+  weight = 8
+  title = "coinepay-xiaohu"
+
+  [languages.tr.params]
+    description = "Coinepay · TRON enerji kiralama ve USDT ödemeleri"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "me"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.tr.params.homeInfoParams]
+      Title = "Coinepay · TRON enerji kiralama ve USDT ödemeleri"
+      Content = '''
+Enerjiniz yetersizse her USDT-TRC20 transferi **13–27 TRX** yakar. Bu maliyet gönderdiğiniz tutarla değil, kaç transfer yaptığınızla ilgilidir; ne kadar sık gönderirseniz o kadar boşa gider.
+
+Enerji kiralamak bu maliyeti düşürür:
+
+| Durum | Gereken enerji | Yaklaşık maliyet |
+|---|---|---|
+| Alıcıda zaten USDT var | 65,000 | 1.5~1.7 TRX |
+| Alıcı adresi boş | 130,000 | 3.0~3.4 TRX |
+
+**Kayıt gerekmez** —— TRX’i platform adresine gönderin, enerji otomatik olarak gönderen adresinize devredilsin. Hesap yok, bağlama yok.
+
+Toplu transferler, borsalar ve işletmeler API’yi bağlayarak her transferde tetiklenen otomatik kiralama yapabilir; elle takip gerekmez.
+
+Enerji kiralamanın yanı sıra sanal kart basımı ve uluslararası havale de yapıyoruz.
+
+Sorunuz olursa doğrudan bana yazın —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.tr.menu.main]]
+    identifier = 'posts'
+    name = "Yazılar"
+    url = '/posts/'
+    weight = 10
+  [[languages.tr.menu.main]]
+    identifier = 'archives'
+    name = "Arşiv"
+    url = '/archives/'
+    weight = 20
+  [[languages.tr.menu.main]]
+    identifier = 'categories'
+    name = "Kategoriler"
+    url = '/categories/'
+    weight = 30
+  [[languages.tr.menu.main]]
+    identifier = 'tags'
+    name = "Etiketler"
+    url = '/tags/'
+    weight = 40
+  [[languages.tr.menu.main]]
+    identifier = 'search'
+    name = "Ara"
+    url = '/search/'
+    weight = 50
+
+# ══ 日本語 (ja) · 东亚 ═══════════════════════════════
+[languages.ja]
+  locale = "ja"
+  label = "日本語"
+  contentDir = 'content/ja'
+  weight = 9
+  title = "coinepay-xiaohu"
+
+  [languages.ja.params]
+    description = "Coinepay · TRON エナジーレンタルと USDT 決済"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "ea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ja.params.homeInfoParams]
+      Title = "Coinepay · TRON エナジーレンタルと USDT 決済"
+      Content = '''
+USDT-TRC20 を 1 回送金するたび、エナジーが不足していると **13〜27 TRX** が消えます。この消費は送金額とは無関係で、何回送ったかだけで決まります。頻繁に送るほど無駄が増えます。
+
+エナジーをレンタルすれば、このコストを抑えられます。
+
+| ケース | 必要なエナジー | おおよその費用 |
+|---|---|---|
+| 相手のアドレスに USDT がある | 65,000 | 1.5~1.7 TRX |
+| 相手のアドレスが空である | 130,000 | 3.0~3.4 TRX |
+
+**登録不要で注文できます** —— TRX をプラットフォームの受取アドレスへ送ると、エナジーが自動的に送金元アドレスへ委任されます。アカウント作成も紐付けも不要です。
+
+一括送金、取引所、加盟店は API を接続して自動レンタルが可能です。送金ごとに発動するため、人が張り付く必要はありません。
+
+エナジーレンタルのほか、バーチャルカードの発行と国際送金も取り扱っています。
+
+ご質問は直接ご連絡ください —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ja.menu.main]]
+    identifier = 'posts'
+    name = "記事"
+    url = '/posts/'
+    weight = 10
+  [[languages.ja.menu.main]]
+    identifier = 'archives'
+    name = "アーカイブ"
+    url = '/archives/'
+    weight = 20
+  [[languages.ja.menu.main]]
+    identifier = 'categories'
+    name = "カテゴリー"
+    url = '/categories/'
+    weight = 30
+  [[languages.ja.menu.main]]
+    identifier = 'tags'
+    name = "タグ"
+    url = '/tags/'
+    weight = 40
+  [[languages.ja.menu.main]]
+    identifier = 'search'
+    name = "検索"
+    url = '/search/'
+    weight = 50
+
+# ══ 한국어 (ko) · 东亚 ═══════════════════════════════
+[languages.ko]
+  locale = "ko"
+  label = "한국어"
+  contentDir = 'content/ko'
+  weight = 10
+  title = "coinepay-xiaohu"
+
+  [languages.ko.params]
+    description = "Coinepay · TRON 에너지 렌탈과 USDT 결제"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "ea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ko.params.homeInfoParams]
+      Title = "Coinepay · TRON 에너지 렌탈과 USDT 결제"
+      Content = '''
+에너지가 부족하면 USDT-TRC20 전송 한 건마다 **13~27 TRX**가 소모됩니다. 이 비용은 보내는 금액과 무관하며 전송 횟수로만 결정됩니다. 자주 보낼수록 낭비가 커집니다.
+
+에너지를 대여하면 이 비용을 낮출 수 있습니다.
+
+| 상황 | 필요 에너지 | 대략적인 비용 |
+|---|---|---|
+| 받는 주소에 USDT가 이미 있음 | 65,000 | 1.5~1.7 TRX |
+| 받는 주소가 비어 있음 | 130,000 | 3.0~3.4 TRX |
+
+**가입 없이 주문할 수 있습니다** —— TRX를 플랫폼 수취 주소로 보내면 에너지가 보내는 주소로 자동 위임됩니다. 계정도, 연동도 필요 없습니다.
+
+대량 전송, 거래소, 가맹점은 API를 연동해 자동으로 대여할 수 있습니다. 전송할 때마다 실행되므로 사람이 지켜볼 필요가 없습니다.
+
+에너지 렌탈 외에 가상카드 발급과 해외 송금도 함께 다루고 있습니다.
+
+궁금한 점은 바로 연락 주세요 —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ko.menu.main]]
+    identifier = 'posts'
+    name = "게시글"
+    url = '/posts/'
+    weight = 10
+  [[languages.ko.menu.main]]
+    identifier = 'archives'
+    name = "아카이브"
+    url = '/archives/'
+    weight = 20
+  [[languages.ko.menu.main]]
+    identifier = 'categories'
+    name = "카테고리"
+    url = '/categories/'
+    weight = 30
+  [[languages.ko.menu.main]]
+    identifier = 'tags'
+    name = "태그"
+    url = '/tags/'
+    weight = 40
+  [[languages.ko.menu.main]]
+    identifier = 'search'
+    name = "검색"
+    url = '/search/'
+    weight = 50
+
+# ══ हिन्दी (hi) · 南亚 ════════════════════════════
+[languages.hi]
+  locale = "hi"
+  label = "हिन्दी"
+  contentDir = 'content/hi'
+  weight = 11
+  title = "coinepay-xiaohu"
+
+  [languages.hi.params]
+    description = "Coinepay · TRON एनर्जी रेंटल और USDT भुगतान"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.hi.params.homeInfoParams]
+      Title = "Coinepay · TRON एनर्जी रेंटल और USDT भुगतान"
+      Content = '''
+एनर्जी कम होने पर हर USDT-TRC20 ट्रांसफर **13–27 TRX** जला देता है। यह लागत भेजी गई राशि पर नहीं, ट्रांसफर की संख्या पर निर्भर करती है — जितनी बार भेजेंगे, उतना ही व्यर्थ जाएगा।
+
+एनर्जी किराए पर लेने से यह लागत घट जाती है:
+
+| स्थिति | आवश्यक एनर्जी | अनुमानित लागत |
+|---|---|---|
+| प्राप्तकर्ता के पास पहले से USDT है | 65,000 | 1.5~1.7 TRX |
+| प्राप्तकर्ता का पता खाली है | 130,000 | 3.0~3.4 TRX |
+
+**पंजीकरण के बिना भी ऑर्डर करें** —— TRX को प्लेटफ़ॉर्म के पते पर भेजें, एनर्जी अपने आप आपके भेजने वाले पते पर सौंप दी जाएगी। न खाता चाहिए, न कोई लिंकिंग।
+
+बैच ट्रांसफर, एक्सचेंज और व्यापारी API जोड़कर स्वचालित रूप से किराए पर ले सकते हैं — हर ट्रांसफर पर सक्रिय, बिना किसी मैन्युअल निगरानी के।
+
+एनर्जी रेंटल के अलावा हम वर्चुअल कार्ड जारी करना और वैश्विक धन प्रेषण भी संभालते हैं।
+
+कोई सवाल हो तो सीधे मुझसे संपर्क करें —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.hi.menu.main]]
+    identifier = 'posts'
+    name = "लेख"
+    url = '/posts/'
+    weight = 10
+  [[languages.hi.menu.main]]
+    identifier = 'archives'
+    name = "संग्रह"
+    url = '/archives/'
+    weight = 20
+  [[languages.hi.menu.main]]
+    identifier = 'categories'
+    name = "श्रेणियाँ"
+    url = '/categories/'
+    weight = 30
+  [[languages.hi.menu.main]]
+    identifier = 'tags'
+    name = "टैग"
+    url = '/tags/'
+    weight = 40
+  [[languages.hi.menu.main]]
+    identifier = 'search'
+    name = "खोज"
+    url = '/search/'
+    weight = 50
+
+# ══ বাংলা (bn) · 南亚 ═════════════════════════════
+[languages.bn]
+  locale = "bn"
+  label = "বাংলা"
+  contentDir = 'content/bn'
+  weight = 12
+  title = "coinepay-xiaohu"
+
+  [languages.bn.params]
+    description = "Coinepay · TRON এনার্জি ভাড়া ও USDT পেমেন্ট"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.bn.params.homeInfoParams]
+      Title = "Coinepay · TRON এনার্জি ভাড়া ও USDT পেমেন্ট"
+      Content = '''
+এনার্জি কম থাকলে প্রতিটি USDT-TRC20 ট্রান্সফারে **১৩–২৭ TRX** পুড়ে যায়। এই খরচ কত টাকা পাঠাচ্ছেন তার উপর নয়, কতবার পাঠাচ্ছেন তার উপর নির্ভর করে — যত ঘন ঘন পাঠাবেন, তত বেশি অপচয়।
+
+এনার্জি ভাড়া নিলে এই খরচ কমে যায়:
+
+| পরিস্থিতি | প্রয়োজনীয় এনার্জি | আনুমানিক খরচ |
+|---|---|---|
+| প্রাপকের কাছে আগে থেকেই USDT আছে | 65,000 | 1.5~1.7 TRX |
+| প্রাপকের ঠিকানা খালি | 130,000 | 3.0~3.4 TRX |
+
+**নিবন্ধন ছাড়াই অর্ডার করা যায়** —— প্ল্যাটফর্মের ঠিকানায় TRX পাঠান, এনার্জি স্বয়ংক্রিয়ভাবে আপনার পাঠানোর ঠিকানায় অর্পিত হবে। অ্যাকাউন্ট লাগে না, লিঙ্ক করাও লাগে না।
+
+ব্যাচ ট্রান্সফার, এক্সচেঞ্জ ও ব্যবসায়ীরা API যুক্ত করে স্বয়ংক্রিয়ভাবে ভাড়া নিতে পারেন — প্রতিটি ট্রান্সফারে চালু হয়, হাতে নজর রাখার দরকার নেই।
+
+এনার্জি ভাড়া ছাড়াও আমরা ভার্চুয়াল কার্ড ইস্যু ও আন্তর্জাতিক রেমিট্যান্স নিয়ে কাজ করি।
+
+প্রশ্ন থাকলে সরাসরি আমাকে জানান —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.bn.menu.main]]
+    identifier = 'posts'
+    name = "নিবন্ধ"
+    url = '/posts/'
+    weight = 10
+  [[languages.bn.menu.main]]
+    identifier = 'archives'
+    name = "আর্কাইভ"
+    url = '/archives/'
+    weight = 20
+  [[languages.bn.menu.main]]
+    identifier = 'categories'
+    name = "বিভাগ"
+    url = '/categories/'
+    weight = 30
+  [[languages.bn.menu.main]]
+    identifier = 'tags'
+    name = "ট্যাগ"
+    url = '/tags/'
+    weight = 40
+  [[languages.bn.menu.main]]
+    identifier = 'search'
+    name = "অনুসন্ধান"
+    url = '/search/'
+    weight = 50
+
+# ══ اردو (ur) · 南亚 ══════════════════════════════
+[languages.ur]
+  locale = "ur"
+  label = "اردو"
+  direction = 'rtl'
+  contentDir = 'content/ur'
+  weight = 13
+  title = "coinepay-xiaohu"
+
+  [languages.ur.params]
+    description = "Coinepay · TRON انرجی کرایہ اور USDT ادائیگیاں"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "sa"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ur.params.homeInfoParams]
+      Title = "Coinepay · TRON انرجی کرایہ اور USDT ادائیگیاں"
+      Content = '''
+انرجی کم ہو تو ہر USDT-TRC20 ٹرانسفر پر **13 تا 27 TRX** جل جاتے ہیں۔ یہ خرچ بھیجی گئی رقم سے نہیں بلکہ ٹرانسفر کی تعداد سے جڑا ہے —— جتنی زیادہ بار بھیجیں گے، اتنا ہی ضائع ہوگا۔
+
+انرجی کرائے پر لینے سے یہ لاگت کم ہو جاتی ہے:
+
+| صورتحال | درکار انرجی | تخمینی لاگت |
+|---|---|---|
+| وصول کنندہ کے پاس پہلے سے USDT ہے | 65,000 | 1.5~1.7 TRX |
+| وصول کنندہ کا پتہ خالی ہے | 130,000 | 3.0~3.4 TRX |
+
+**رجسٹریشن کے بغیر بھی آرڈر ہو سکتا ہے** —— TRX پلیٹ فارم کے پتے پر بھیجیں، انرجی خودکار طور پر آپ کے بھیجنے والے پتے کو تفویض ہو جائے گی۔ نہ اکاؤنٹ چاہیے، نہ کوئی منسلک کرنا۔
+
+بیچ ٹرانسفر، ایکسچینجز اور تاجر API منسلک کر کے خودکار کرایہ حاصل کر سکتے ہیں —— ہر ٹرانسفر پر خودبخود چلتا ہے، دستی نگرانی کی ضرورت نہیں۔
+
+انرجی کرائے کے علاوہ ہم ورچوئل کارڈ کے اجرا اور عالمی ترسیلاتِ زر کا کام بھی کرتے ہیں۔
+
+کوئی سوال ہو تو براہِ راست مجھ سے رابطہ کریں —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ur.menu.main]]
+    identifier = 'posts'
+    name = "مضامین"
+    url = '/posts/'
+    weight = 10
+  [[languages.ur.menu.main]]
+    identifier = 'archives'
+    name = "آرکائیو"
+    url = '/archives/'
+    weight = 20
+  [[languages.ur.menu.main]]
+    identifier = 'categories'
+    name = "زمرہ جات"
+    url = '/categories/'
+    weight = 30
+  [[languages.ur.menu.main]]
+    identifier = 'tags'
+    name = "ٹیگز"
+    url = '/tags/'
+    weight = 40
+  [[languages.ur.menu.main]]
+    identifier = 'search'
+    name = "تلاش"
+    url = '/search/'
+    weight = 50
+
+# ══ العربية (ar) · 中东 ═══════════════════════════
+[languages.ar]
+  locale = "ar"
+  label = "العربية"
+  direction = 'rtl'
+  contentDir = 'content/ar'
+  weight = 14
+  title = "coinepay-xiaohu"
+
+  [languages.ar.params]
+    description = "Coinepay · تأجير طاقة TRON ومدفوعات USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "me"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.ar.params.homeInfoParams]
+      Title = "Coinepay · تأجير طاقة TRON ومدفوعات USDT"
+      Content = '''
+كل تحويل USDT-TRC20 يحرق **13 إلى 27 TRX** عند نقص الطاقة. هذه التكلفة لا علاقة لها بالمبلغ المُرسَل، بل بعدد التحويلات —— وكلما زاد التكرار زاد الهدر.
+
+تأجير الطاقة يخفّض هذه التكلفة:
+
+| الحالة | الطاقة المطلوبة | التكلفة التقريبية |
+|---|---|---|
+| المستلم يملك USDT بالفعل | 65,000 | 1.5~1.7 TRX |
+| عنوان المستلم فارغ | 130,000 | 3.0~3.4 TRX |
+
+**يمكن الطلب دون تسجيل** —— أرسل TRX إلى عنوان المنصة، وتُفوَّض الطاقة تلقائيًا إلى عنوان الإرسال الخاص بك. لا حساب ولا ربط.
+
+يمكن للتحويلات المجمَّعة ومنصات التداول والتجار ربط الواجهة البرمجية للتأجير التلقائي، فتُفعَّل مع كل تحويل دون متابعة يدوية.
+
+إلى جانب تأجير الطاقة، نتولى أيضًا إصدار البطاقات الافتراضية والحوالات الدولية.
+
+راسلني مباشرة عند وجود أي استفسار —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.ar.menu.main]]
+    identifier = 'posts'
+    name = "المقالات"
+    url = '/posts/'
+    weight = 10
+  [[languages.ar.menu.main]]
+    identifier = 'archives'
+    name = "الأرشيف"
+    url = '/archives/'
+    weight = 20
+  [[languages.ar.menu.main]]
+    identifier = 'categories'
+    name = "التصنيفات"
+    url = '/categories/'
+    weight = 30
+  [[languages.ar.menu.main]]
+    identifier = 'tags'
+    name = "الوسوم"
+    url = '/tags/'
+    weight = 40
+  [[languages.ar.menu.main]]
+    identifier = 'search'
+    name = "بحث"
+    url = '/search/'
+    weight = 50
+
+# ══ ไทย (th) · 东南亚 ══════════════════════════════
+[languages.th]
+  locale = "th"
+  label = "ไทย"
+  contentDir = 'content/th'
+  weight = 15
+  title = "coinepay-xiaohu"
+
+  [languages.th.params]
+    description = "Coinepay · เช่าพลังงาน TRON และการชำระเงินด้วย USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "sea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.th.params.homeInfoParams]
+      Title = "Coinepay · เช่าพลังงาน TRON และการชำระเงินด้วย USDT"
+      Content = '''
+ทุกครั้งที่โอน USDT-TRC20 หากพลังงานไม่พอจะถูกเผา **13–27 TRX** ค่าใช้จ่ายนี้ไม่เกี่ยวกับจำนวนเงินที่โอน แต่ขึ้นอยู่กับจำนวนครั้งที่โอน ยิ่งโอนบ่อยยิ่งเสียเปล่ามาก
+
+การเช่าพลังงานช่วยลดต้นทุนส่วนนี้ได้:
+
+| กรณี | พลังงานที่ต้องใช้ | ค่าใช้จ่ายโดยประมาณ |
+|---|---|---|
+| ที่อยู่ปลายทางมี USDT อยู่แล้ว | 65,000 | 1.5~1.7 TRX |
+| ที่อยู่ปลายทางว่างเปล่า | 130,000 | 3.0~3.4 TRX |
+
+**สั่งซื้อได้โดยไม่ต้องสมัครสมาชิก** —— โอน TRX ไปยังที่อยู่รับเงินของแพลตฟอร์ม พลังงานจะถูกมอบสิทธิ์กลับมายังที่อยู่ผู้ส่งโดยอัตโนมัติ ไม่ต้องสร้างบัญชี ไม่ต้องผูกอะไร
+
+การโอนจำนวนมาก กระดานเทรด และร้านค้า สามารถเชื่อมต่อ API เพื่อเช่าอัตโนมัติ ทำงานทุกครั้งที่มีการโอน โดยไม่ต้องคอยดูเอง
+
+นอกจากการเช่าพลังงาน เรายังให้บริการออกบัตรเสมือนและโอนเงินระหว่างประเทศด้วย
+
+มีคำถามทักมาหาผมได้โดยตรง —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.th.menu.main]]
+    identifier = 'posts'
+    name = "บทความ"
+    url = '/posts/'
+    weight = 10
+  [[languages.th.menu.main]]
+    identifier = 'archives'
+    name = "คลังบทความ"
+    url = '/archives/'
+    weight = 20
+  [[languages.th.menu.main]]
+    identifier = 'categories'
+    name = "หมวดหมู่"
+    url = '/categories/'
+    weight = 30
+  [[languages.th.menu.main]]
+    identifier = 'tags'
+    name = "แท็ก"
+    url = '/tags/'
+    weight = 40
+  [[languages.th.menu.main]]
+    identifier = 'search'
+    name = "ค้นหา"
+    url = '/search/'
+    weight = 50
+
+# ══ Tiếng Việt (vi) · 东南亚 ═══════════════════════
+[languages.vi]
+  locale = "vi"
+  label = "Tiếng Việt"
+  contentDir = 'content/vi'
+  weight = 16
+  title = "coinepay-xiaohu"
+
+  [languages.vi.params]
+    description = "Coinepay · Thuê năng lượng TRON và thanh toán USDT"
+    keywords = ["TRX能量租赁", "USDT转账", "TRC20手续费", "能量委托", "Coinepay"]
+    langGroup = "sea"
+    noindex = true          # 暂不进 sitemap；有文章后删掉本行
+
+    [languages.vi.params.homeInfoParams]
+      Title = "Coinepay · Thuê năng lượng TRON và thanh toán USDT"
+      Content = '''
+Mỗi giao dịch USDT-TRC20 sẽ đốt **13–27 TRX** khi bạn không đủ năng lượng. Chi phí này không liên quan đến số tiền chuyển mà chỉ phụ thuộc vào số lần chuyển — chuyển càng nhiều thì càng lãng phí.
+
+Thuê năng lượng giúp kéo chi phí này xuống:
+
+| Trường hợp | Năng lượng cần | Chi phí ước tính |
+|---|---|---|
+| Địa chỉ nhận đã có sẵn USDT | 65,000 | 1.5~1.7 TRX |
+| Địa chỉ nhận đang trống | 130,000 | 3.0~3.4 TRX |
+
+**Đặt lệnh không cần đăng ký** —— chuyển TRX tới địa chỉ nhận của nền tảng, năng lượng sẽ tự động được ủy quyền về địa chỉ gửi của bạn. Không cần tài khoản, không cần liên kết.
+
+Chuyển khoản hàng loạt, sàn giao dịch và thương nhân có thể kết nối API để thuê tự động, kích hoạt theo từng giao dịch, không cần ai ngồi canh.
+
+Ngoài thuê năng lượng, chúng tôi còn phát hành thẻ ảo và xử lý chuyển tiền quốc tế.
+
+Có gì thắc mắc cứ nhắn trực tiếp cho tôi —— **Telegram [@coinepay_xiaohu](https://t.me/coinepay_xiaohu)** · **[WhatsApp](https://wa.me/message/2I3GXEELDVMHP1)**
+'''
+
+  [[languages.vi.menu.main]]
+    identifier = 'posts'
+    name = "Bài viết"
+    url = '/posts/'
+    weight = 10
+  [[languages.vi.menu.main]]
+    identifier = 'archives'
+    name = "Lưu trữ"
+    url = '/archives/'
+    weight = 20
+  [[languages.vi.menu.main]]
+    identifier = 'categories'
+    name = "Chuyên mục"
+    url = '/categories/'
+    weight = 30
+  [[languages.vi.menu.main]]
+    identifier = 'tags'
+    name = "Thẻ"
+    url = '/tags/'
+    weight = 40
+  [[languages.vi.menu.main]]
+    identifier = 'search'
+    name = "Tìm kiếm"
+    url = '/search/'
+    weight = 50
 
 [markup.highlight]
   noClasses = false

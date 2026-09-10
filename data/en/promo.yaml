@@ -1,0 +1,48 @@
+# English —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsored"
+
+card:
+  title: "Spend USDT directly: the Coinepay virtual card"
+  body: "Getting on-chain USDT spent off-chain — AI subscriptions, memberships, ad accounts, overseas shopping — comes down to one missing piece: a card that actually works. Top-ups land instantly, settlement is multi-currency, and there is no detour through a bank withdrawal."
+  cta:
+    label: "Get a card →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Talk to me"
+  body: "Energy rental, card issuance, remittance — message me directly, no ticket queue."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Live support"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Open the card platform"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "TRC20 fees too high? Renting energy is the direct fix"
+  points:
+    - "Every USDT-TRC20 transfer burns <b>13–27 TRX</b> when energy runs short. <b>The cost is unrelated to the amount you send</b> — only to the number of transfers."
+    - "Recipient already holds USDT: 65,000 energy, renting for roughly <b>1.5–1.7 TRX</b>, well under half of what burning TRX costs."
+    - "Recipient address is empty and has never received USDT: 130,000 energy, about <b>3.0–3.4 TRX</b>."
+    - "<b>Order without registering</b> — send TRX to the platform address and the energy is delegated back to your sending address within seconds."
+    - "Batch transfers, exchanges and merchants can rent automatically through the API."
+  cta:
+    label: "Rent energy now →"
+    url: "https://login.trxapi.io/energy"

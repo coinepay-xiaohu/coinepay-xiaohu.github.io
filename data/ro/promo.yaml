@@ -1,0 +1,48 @@
+# Română —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Promovat"
+
+card:
+  title: "Cheltuiește USDT direct: cardul virtual Coinepay"
+  body: "Trecerea USDT din blockchain în lumea reală — abonamente AI, servicii, campanii publicitare, cumpărături din străinătate — depinde de o singură piesă lipsă: un card care chiar funcționează. Alimentările intră instant, decontarea este multivalutară și nu mai e nevoie de un ocol prin retragerea bancară."
+  cta:
+    label: "Solicită un card →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Scrie-mi"
+  body: "Închiriere de energie, carduri, transferuri — scrie-mi direct, fără coadă de tichete."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Asistență live"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Intră pe platformă"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Comisioane TRC20 prea mari? Închirierea energiei rezolvă direct"
+  points:
+    - "Fiecare transfer USDT-TRC20 consumă <b>13–27 TRX</b> când energia se termină. <b>Costul nu depinde de suma trimisă</b>, ci doar de numărul de transferuri."
+    - "Destinatarul deține deja USDT: 65.000 de energie, închiriere de aproximativ <b>1,5–1,7 TRX</b>, mult sub jumătate din costul arderii de TRX."
+    - "Adresa destinatarului este goală și nu a primit niciodată USDT: 130.000 de energie, aproximativ <b>3,0–3,4 TRX</b>."
+    - "<b>Comandă fără înregistrare</b> —— trimite TRX la adresa platformei, iar energia ajunge la adresa ta de expediere în câteva secunde."
+    - "Transferurile în masă, bursele și comercianții pot închiria automat prin API."
+  cta:
+    label: "Închiriază energie →"
+    url: "https://login.trxapi.io/energy"

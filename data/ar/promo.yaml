@@ -1,0 +1,48 @@
+# العربية —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "إعلان"
+
+card:
+  title: "أنفق USDT مباشرة: بطاقة Coinepay الافتراضية"
+  body: "نقل USDT من الشبكة إلى العالم الواقعي —— اشتراكات الذكاء الاصطناعي، والعضويات، وحسابات الإعلانات، والتسوق من الخارج —— يتوقف على قطعة واحدة ناقصة: بطاقة تعمل فعلًا. الشحن يصل فورًا، والتسوية بعملات متعددة، ولا حاجة للمرور بسحب مصرفي أولًا."
+  cta:
+    label: "احصل على بطاقة ←"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "تحدّث معي"
+  body: "تأجير الطاقة، البطاقات، الحوالات —— راسلني مباشرة دون انتظار في طابور التذاكر."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "الدعم المباشر"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "الانتقال إلى المنصة"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "هل رسوم TRC20 مرتفعة؟ تأجير الطاقة هو الحل الأكثر مباشرة"
+  points:
+    - "كل تحويل USDT-TRC20 يحرق <b>13 إلى 27 TRX</b> عند نفاد الطاقة. <b>هذه التكلفة لا ترتبط بالمبلغ المُرسَل</b>، بل بعدد التحويلات فقط."
+    - "المستلم يملك USDT بالفعل: تحتاج إلى 65,000 وحدة طاقة، بإيجار نحو <b>1.5 إلى 1.7 TRX</b>، أي أقل من نصف تكلفة حرق TRX."
+    - "عنوان المستلم فارغ ولم يستقبل USDT من قبل: تحتاج إلى 130,000 وحدة، أي نحو <b>3.0 إلى 3.4 TRX</b>."
+    - "<b>اطلب دون تسجيل</b> —— أرسل TRX إلى عنوان المنصة، وتصل الطاقة إلى عنوان الإرسال خلال ثوانٍ."
+    - "يمكن للتحويلات المجمَّعة ومنصات التداول والتجار التأجير تلقائيًا عبر الواجهة البرمجية."
+  cta:
+    label: "استأجر الطاقة الآن ←"
+    url: "https://login.trxapi.io/energy"

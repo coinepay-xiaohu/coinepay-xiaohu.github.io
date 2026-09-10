@@ -1,0 +1,48 @@
+# Español —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Patrocinado"
+
+card:
+  title: "Gasta USDT directamente: la tarjeta virtual de Coinepay"
+  body: "Llevar los USDT de la cadena al mundo real —suscripciones de IA, membresías, campañas publicitarias, compras en el extranjero— depende de una sola pieza: una tarjeta que funcione. Las recargas llegan al instante, la liquidación es multidivisa y no hay que pasar antes por el banco."
+  cta:
+    label: "Solicitar tarjeta →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Hablemos"
+  body: "Alquiler de energía, tarjetas, remesas: escríbeme directamente, sin colas de tickets."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Soporte en vivo"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Ir a la plataforma"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "¿Comisiones TRC20 demasiado altas? Alquilar energía es la solución directa"
+  points:
+    - "Cada transferencia de USDT-TRC20 quema <b>13–27 TRX</b> cuando falta energía. <b>El coste no depende del importe enviado</b>, solo del número de transferencias."
+    - "El destinatario ya tiene USDT: 65.000 de energía, con un alquiler de unos <b>1,5–1,7 TRX</b>, menos de la mitad de lo que cuesta quemar TRX."
+    - "La dirección de destino está vacía y nunca ha recibido USDT: 130.000 de energía, unos <b>3,0–3,4 TRX</b>."
+    - "<b>Pedido sin registro</b> —— envía TRX a la dirección de la plataforma y la energía se delega a tu dirección de envío en segundos."
+    - "Transferencias por lotes, exchanges y comercios pueden alquilar automáticamente mediante la API."
+  cta:
+    label: "Alquilar energía →"
+    url: "https://login.trxapi.io/energy"

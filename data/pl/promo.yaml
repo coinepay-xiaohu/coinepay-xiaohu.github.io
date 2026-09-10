@@ -1,0 +1,48 @@
+# Polski —— 文章页推广位文案。改这个文件即可，不用动 HTML/CSS。
+# enable: false 可一键关掉本语言的全部推广位。
+enable: true
+
+placement:
+  card: after-intro
+  energy: middle
+  contact: end
+
+badge: "Sponsorowane"
+
+card:
+  title: "Wydawaj USDT bezpośrednio: karta wirtualna Coinepay"
+  body: "Przeniesienie USDT z łańcucha do realnego świata — subskrypcje AI, abonamenty, kampanie reklamowe, zakupy zagraniczne — sprowadza się do jednego brakującego elementu: karty, która naprawdę działa. Doładowania księgują się natychmiast, rozliczenie jest wielowalutowe, a wypłata do banku nie jest potrzebna."
+  cta:
+    label: "Zamów kartę →"
+    url: "https://www.coinepay.net/login?referrer=Getrich888"
+
+contact:
+  title: "Napisz do mnie"
+  body: "Wynajem energii, karty, przelewy — pisz bezpośrednio, bez kolejki zgłoszeń."
+  links:
+    - icon: "✈"
+      label: "Telegram"
+      url: "https://t.me/coinepay_xiaohu"
+    - icon: "💬"
+      label: "WhatsApp"
+      url: "https://wa.me/message/2I3GXEELDVMHP1"
+    - icon: "🎧"
+      label: "Czat na żywo"
+      url: "https://chat.ssrchat.com/service/grpect"
+    - icon: "💳"
+      label: "Przejdź do platformy"
+      url: "https://www.coinepay.net/login?referrer=Getrich888"
+      primary: true
+
+energy:
+  icon: "⚡"
+  title: "Opłaty TRC20 za wysokie? Wynajem energii to najprostsze rozwiązanie"
+  points:
+    - "Każdy przelew USDT-TRC20 spala <b>13–27 TRX</b>, gdy zabraknie energii. <b>Koszt nie zależy od kwoty przelewu</b>, tylko od liczby przelewów."
+    - "Odbiorca ma już USDT: 65 000 energii, wynajem około <b>1,5–1,7 TRX</b>, czyli znacznie poniżej połowy kosztu spalania TRX."
+    - "Adres odbiorcy jest pusty i nigdy nie otrzymał USDT: 130 000 energii, około <b>3,0–3,4 TRX</b>."
+    - "<b>Zamówienie bez rejestracji</b> —— wyślij TRX na adres platformy, a energia trafi na Twój adres nadawcy w kilka sekund."
+    - "Przelewy zbiorcze, giełdy i sprzedawcy mogą wynajmować automatycznie przez API."
+  cta:
+    label: "Wynajmij energię →"
+    url: "https://login.trxapi.io/energy"
